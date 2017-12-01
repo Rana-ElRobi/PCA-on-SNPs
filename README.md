@@ -17,12 +17,19 @@ arguments{
   \item{vec.ia}{a vector of integers specifying the orders of the interactions
     that explain the cases. \code{c(3,1,2,3)}, e.g., means that a three-way,
     a one-way (i.e. just a SNP), a two-way, and a three-way interaction explain the cases.}
--%%%%%%%%%%%%%%%%% Question %%%%%%%%%%%%%%%%%%%%%%%
+#%%%%%%%%%%%%%%%%% Question %%%%%%%%%%%%%%%%%%%%%%%
 Q didnt get item{vec.ia} !!!
 -%%%%%%%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%
--%%%%%%%%%%%%%%%%% Question %%%%%%%%%%%%%%%%%%%%%%%
+#%%%%%%%%%%%%%%%%% Question %%%%%%%%%%%%%%%%%%%%%%%
 Q What is "allele frequency of each SNP" ?
 -%%%%%%%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%
-
-
+In Sim object:
+--------------
+- $data 
+ Shows the data in matrix form 
+ nrow -> mapes to no of observations
+ ncol -> mapes to no. of SNPs
+# %%%%%%%%%%%%%%%%% Question %%%%%%%%%%%%%%%%%%%%%%%
+# NB: values inside are 0 ,1 ,2 !! what it indicate ?
+-%%%%%%%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%
 
