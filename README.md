@@ -39,3 +39,13 @@ In Sim object:
 Q What is the "case-control status of the observations" ?
 %%%%%%%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%
 
+- $tab.explain
+  a table naming the explanatory interactions and the numbers of cases and controls explained by     
+  them. in other words it shows the output in tabular formate ;)
+
+
+
+
+
+
+
