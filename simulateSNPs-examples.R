@@ -42,9 +42,24 @@ sim2
 
 # Example (3)
 
+# Simulate a data set consisting of 1000 observations and 50 SNPs,
+# where the minor allele frequency of each SNP is 0.25, and
+# the interactions 
+# ((SNP1 == 2) & (SNP2 != 0) & (SNP3 == 1))   and 
+# ((SNP4 == 0) & (SNP5 != 2))
+# are explanatory for 200 and 250 of the 500 cases, respectively,
+# and for none of the 500 controls.
 
+list1 <- list(c(2, 0, 1), c(0, 2))
+list2 <- list(c(1, 0, 1), c(1, 0))
+sim3 <- simulateSNPs(1000, 50, c(3, 2), list.ia.val = list1,
+                     list.equal = list2, vec.ia.num = c(200, 250), maf = 0.25)
+sim3
 
-
+# output 
+#                     Interaction         Cases  Controls
+#1 SNP1 == 2  &  SNP2 != 0  &  SNP3 == 1   200        0
+#2               SNP4 == 0  &  SNP5 != 2   250        0
 
 
 
