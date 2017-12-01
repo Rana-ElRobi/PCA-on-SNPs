@@ -85,7 +85,10 @@ View(sim1$tab.explain)
 # {is a character vector naming the interactions.}
 View(as.matrix(sim1$ia))
 
-
+# item{maf}
+# {vector of length {n.snp} containing the minor allele frequencies.}
+View(as.matrix(sim1$maf))
+dim(as.matrix(sim1$maf)) #50 X 1
 
 
 
