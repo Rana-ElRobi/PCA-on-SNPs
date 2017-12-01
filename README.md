@@ -31,5 +31,11 @@ In Sim object:
  ncol -> mapes to no. of SNPs
 # %%%%%%%%%%%%%%%%% Question %%%%%%%%%%%%%%%%%%%%%%%
 # NB: values inside are 0 ,1 ,2 !! what it indicate ?
--%%%%%%%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%
+
+- $cl
+  is a vector of length {n.obs} comprising the case-control status of the observations.
+# %%%%%%%%%%%%%%%%% Question %%%%%%%%%%%%%%%%%%%%%%%
+Q What is the "case-control status of the observations" ?
+%%%%%%%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%
 
