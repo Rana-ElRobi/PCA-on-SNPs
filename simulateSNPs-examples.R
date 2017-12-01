@@ -70,7 +70,10 @@ sim3
 # NB: values inside are 0 ,1 ,2 !! what it indicate ?
 View (sim1$data)
 
-
+#item{cl}{a vector of length \code{n.obs} comprising 
+#the case-control status of the observations.
+View(as.list(sim1$cl)) # All are 1s
+dim(as.matrix(sim1$cl)) # 2000  x  1
 
 
 
