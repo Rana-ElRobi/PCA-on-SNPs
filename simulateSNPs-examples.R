@@ -75,6 +75,13 @@ View (sim1$data)
 View(as.list(sim1$cl)) # All are 1s
 dim(as.matrix(sim1$cl)) # 2000  x  1
 
+# item{tab.explain}
+# {a table naming the explanatory interactions and the numbers
+#  of cases and controls explained by them.}
+# in other words it shows the output in tabular formate ;)
+View(sim1$tab.explain)
+
+
 
 
 
