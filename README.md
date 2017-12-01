@@ -43,6 +43,12 @@ Q What is the "case-control status of the observations" ?
   a table naming the explanatory interactions and the numbers of cases and controls explained by     
   them. in other words it shows the output in tabular formate ;)
 
+- $ai
+  is a character vector naming the interactions.
+# %%%%%%%%%%%%%%%%% Question %%%%%%%%%%%%%%%%%%%%%%%
+Q I cant understand the representation meaning of the output !!!
+eg : "SNP1 == 1  &  SNP2 != 1  &  SNP3 == 1"
+%%%%%%%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%
 
 
 
