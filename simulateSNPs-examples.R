@@ -61,6 +61,18 @@ sim3
 #1 SNP1 == 2  &  SNP2 != 0  &  SNP3 == 1   200        0
 #2               SNP4 == 0  &  SNP5 != 2   250        0
 
+#--------------------------------------------------------------
+# In this section I wana invistigate the return obj sim
+
+# Shows the data in matrix form 
+# nrow -> mapes to no of observations
+# ncol -> mapes to no. of SNPs
+# NB: values inside are 0 ,1 ,2 !! what it indicate ?
+View (sim1$data)
+
+
+
+
 
 
 
