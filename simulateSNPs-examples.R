@@ -81,8 +81,9 @@ dim(as.matrix(sim1$cl)) # 2000  x  1
 # in other words it shows the output in tabular formate ;)
 View(sim1$tab.explain)
 
-
-
+# item{ia}
+# {is a character vector naming the interactions.}
+View(as.matrix(sim1$ia))
 
 
 
