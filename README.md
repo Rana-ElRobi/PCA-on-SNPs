@@ -50,7 +50,8 @@ Q I cant understand the representation meaning of the output !!!
 eg : "SNP1 == 1  &  SNP2 != 1  &  SNP3 == 1"
 %%%%%%%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%%%%%%%%%%%%%
 
-
+- $maf
+ is a vector of length {n.snp} containing the minor allele frequencies
 
 
 
