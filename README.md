@@ -20,6 +20,8 @@ Q How to simulate SNPs data using "Scrime" ?
     a one-way (i.e. just a SNP), a two-way, and a three-way interaction explain the cases.}
 # %%%%% Question %%%%%
 Q didnt get item{vec.ia} !!!
+( Q in another way )
+" How i know which interaction I want ? "
 
 Q What is "allele frequency of each SNP" ?
 - alleles mean:
