@@ -10,18 +10,21 @@ Q How to simulate SNPs data using "Scrime" ?
 
 ** simulateSNPs(n.obs, n.snp, vec.ia, ..)
 
-*arguments{
+* arguments{
   - item{n.obs}{either an integer specifying the total number of observations
   
   - item{n.snp}{integer specifying the number of SNPs.}
   
-  - item{vec.ia}{a vector of integers specifying the orders of the interactions
-    that explain the cases. \code{c(3,1,2,3)}, e.g., means that a three-way,
-    a one-way (i.e. just a SNP), a two-way, and a three-way interaction explain the cases.}
+  - item{vec.ia}
+    " a vector of integers specifying the orders of the interactions
+    that explain the cases."
+    eg: c(3,1,2,3),
+    -  means that a three-way, a one-way (i.e. just a SNP), a two-way, and a three-way interaction explain the cases.
+    
 # %%%%% Question %%%%%
 Q didnt get item{vec.ia} !!!
 ( Q in another way )
-" How i know which interaction I want ? "
+" How i know which the order of interactions ? "
 
 Q What is "allele frequency of each SNP" ?
 - alleles mean:
