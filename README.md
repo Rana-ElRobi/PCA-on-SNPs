@@ -48,6 +48,7 @@ Helper link : https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism
 
 # %%%%% Question %%%%%
  NB: values inside are 0 ,1 ,2 !! what it indicate ?
+( Is it score for something ? if yes , What is it ? )
 
 - $cl
   is a vector of length {n.obs} comprising the case-control status of the observations.
