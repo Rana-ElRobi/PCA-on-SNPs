@@ -20,9 +20,23 @@ Q How to simulate SNPs data using "Scrime" ?
     a one-way (i.e. just a SNP), a two-way, and a three-way interaction explain the cases.}
 # %%%%% Question %%%%%
 Q didnt get item{vec.ia} !!!
-# %%%%% Question %%%%%
-Q What is "allele frequency of each SNP" ?
 
+Q What is "allele frequency of each SNP" ?
+- alleles mean:
+  " For example, at a specific base position in the human genome, the C nucleotide may appear in most individuals, but in a minority of individuals, the position is occupied by an A. This means that there is an SNP at this specific position, and the two possible nucleotide variations – C or A – are said to be alleles for this position "
+
+- allele Frequency
+
+  Within a genome
+" The genomic distribution of SNPs is not homogenous; SNPs occur in non-coding regions more frequently than in coding regions or, in general, where natural selection is acting and "fixing" the allele (eliminating other variants) of the SNP that constitutes the most favorable genetic adaptation.
+Other factors, like genetic recombination and mutation rate, can also determine SNP density.
+
+SNP density can be predicted by the presence of microsatellites: AT microsatellites in particular are potent predictors of SNP density, with long (AT)(n) repeat tracts tending to be found in regions of significantly reduced SNP density and low GC content. "
+
+  Within a population
+  " There are variations between human populations, so a SNP allele that is common in one geographical or ethnic group may be much rarer in another. Within a population, SNPs can be assigned a minor allele frequency — the lowest allele frequency at a locus that is observed in a particular population. This is simply the lesser of the two allele frequencies for single-nucleotide polymorphisms." 
+
+Helper link : https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism 
 ## In Sim object:
 
 - $data 
