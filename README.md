@@ -72,5 +72,16 @@ eg : "SNP1 == 1  &  SNP2 != 1  &  SNP3 == 1"
  is a vector of length {n.snp} containing the minor allele frequencies
 
 
+----------------------------
+
+## Main points
+- Does ` sim$data ` matrix `==` CADD pathoginicity Score matrix ?
+- if yes, What are the `n.obs` & `n.snps` values we want the matrix to be ?
+- and What are the `vec.ai` interactions order explains our case ?
+- 
+
+
+
+
 
 
