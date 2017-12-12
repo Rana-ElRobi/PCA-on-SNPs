@@ -80,9 +80,10 @@ eg : `SNP1 == 1  &  SNP2 != 1  &  SNP3 == 1`
 - if yes, Q What are the `n.obs` & `n.snps` values we want the matrix to be ?
 - and Q What are the `vec.ai` interactions order explains our case ?
  
+## In `pca-on-snps.R`
 
-
-
+-  Step 1  : Generate simulated SNPs data
+  - Simulate a data set containing 2000 observations `obs`(1000 cases and 1000 controls) and `snps` 100 SNPs , where `intr.vec <- c(3, 2, 2) `one three-way and two  two-way interactions are chosen randomly to be explanatory  for the case-control status.
 
 
 
