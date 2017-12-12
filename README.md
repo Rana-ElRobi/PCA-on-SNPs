@@ -1,6 +1,14 @@
 # PCA-on-SNPs
 This repo implements PCA approch on pathogenicity scores of SNPs mapable to a defined geneset, but the data are simulated from R-package called `Scrime`.
 
+## Files List with describtion 
+- `simulateSNPs-examples.R`
+  - " contains some examples about how to use simulate SNPS funcrion and how to access all the resultant object componants  "
+- `pca-on-snps.R`
+  - " contains applied pca on simulated snps data "
+
+## In ` simulateSNPs-examples.R `
+
 Q How to simulate SNPs data using "Scrime" ?
 
 1. [ Function documentation on Github ]( https://github.com/cran/scrime/blob/master/man/simulateSNPs.Rd ) 
