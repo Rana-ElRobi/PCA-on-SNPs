@@ -16,3 +16,23 @@ intr.vec <- c(3, 2, 2) # interactions
 sim.snps <- simulateSNPs(obs , snps , intr.vec )
 # matrix of data 
 View(sim.snps$data)
+
+# Step 2 : Apply PCA
+# ===================
+# By default, it centers the variable to have mean equals to zero. 
+# With parameter scale. = T, we normalize the variables to have standard deviation equals to 1.
+
+#principal component analysis
+snp.comp <- prcomp(sim.snps$data, scale. = F)
+names(snp.comp) # View obj componants
+# [1] "sdev"     "rotation" "center"   "scale"    "x"
+# "sdev"   -> eigen values
+#View(snp.comp$sdev)
+
+# "rotation"  -> eigen vectors
+View(snp.comp$rotation)
+
+# "x"  -> scores
+#View(snp.comp$x)
+
+
