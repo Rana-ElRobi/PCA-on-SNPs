@@ -1,6 +1,14 @@
 # PCA-on-SNPs
 This repo implements PCA approch on pathogenicity scores of SNPs mapable to a defined geneset, but the data are simulated from R-package called `Scrime`.
 
+## Files List with describtion 
+- `simulateSNPs-examples.R`
+  - " contains some examples about how to use simulate SNPS funcrion and how to access all the resultant object componants  "
+- `pca-on-snps.R`
+  - " contains applied pca on simulated snps data "
+
+## In ` simulateSNPs-examples.R `
+
 Q How to simulate SNPs data using "Scrime" ?
 
 1. [ Function documentation on Github ]( https://github.com/cran/scrime/blob/master/man/simulateSNPs.Rd ) 
@@ -72,9 +80,27 @@ eg : `SNP1 == 1  &  SNP2 != 1  &  SNP3 == 1`
 - if yes, Q What are the `n.obs` & `n.snps` values we want the matrix to be ?
 - and Q What are the `vec.ai` interactions order explains our case ?
  
+## In `pca-on-snps.R`
+[ PCA Helper link ](https://www.analyticsvidhya.com/blog/2016/03/practical-guide-principal-component-analysis-python/)
 
+-  Step 1  : Generate simulated SNPs data
+  - Simulate a data set containing 2000 observations `obs`(1000 cases and 1000 controls) and `snps` 100 SNPs , where `intr.vec <- c(3, 2, 2) `one three-way and two  two-way interactions are chosen randomly to be explanatory  for the case-control status.
 
+- Step 2 : Apply PCA
+  - Principal component analysis is a method of extracting important variables (in form of components) from a large set of variables available in a data set. It extracts low dimensional set of features from a high dimensional data set with a motive to capture as much information as possible.
 
+- `prcomp(sim.snps$data, scale. = F)`
+	- Appling pca by `prcomp` function 
+	- Set parameter `scale. = T` to normalize the variables to have standard 	deviation equals to 1.
+	- By default `center` , set it centers the variable to have mean equals to zero
 
+- Resultant object `snp.comp` ,has 5 componants:
+	- `[1] "sdev"     "rotation" "center"   "scale"    "x" `
+	- `snp.comp$sdev`   -> eigen values
+	- `snp.comp$rotation`  -> eigen vectors
+	- `snp.comp$x`  -> scores 
 
+	> Q `x` ? if retx is true the value of the rotated data (the centred (and scaled if requested) data multiplied by the rotation matrix) is returned. Hence, cov(x) is the diagonal matrix diag(sdev^2). For the formula method, napredict() is applied to handle the treatment of values omitted by the na.action. 
 
+- Plot 3 princibal componants, using [Scatter 3D plot](http://www.sthda.com/english/wiki/amazing-interactive-3d-scatter-plots-r-software-and-data-visualization)
+![Image of 3d plot result](https://github.com/Rana-ElRobi/PCA-on-SNPs/blob/pca/pca-plot.png)
