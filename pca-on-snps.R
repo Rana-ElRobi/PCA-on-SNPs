@@ -2,7 +2,10 @@
 #-------------------------------------------------------
 #load needed libraries
 library(scrime)
-
+library(scatterplot3d)
+library(gmodels)
+library(rgl)
+library("car")
 # Step 1  : Generate simulated SNPs data
 # =======================================
 # Simulate a data set containing 2000 observations (1000 cases
@@ -15,7 +18,7 @@ intr.vec <- c(3, 2, 2) # interactions
 # call genrate function
 sim.snps <- simulateSNPs(obs , snps , intr.vec )
 # matrix of data 
-View(sim.snps$data)
+#View(sim.snps$data)
 
 # Step 2 : Apply PCA
 # ===================
@@ -30,9 +33,30 @@ names(snp.comp) # View obj componants
 #View(snp.comp$sdev)
 
 # "rotation"  -> eigen vectors
-View(snp.comp$rotation)
+
+#View(snp.comp$rotation)
 
 # "x"  -> scores
 #View(snp.comp$x)
+
+# Step 3 : Expolre 
+# =================
+# Let’s look at first 3 principal components 
+main.pc <- snp.comp$rotation[,1:3]
+#View(main.pc)
+
+# Plot  
+# Plot data in 3D each class with color
+# Helper Link : http://www.sthda.com/english/wiki/amazing-interactive-3d-scatter-plots-r-software-and-data-visualization
+p1 <- snp.comp$rotation[,1]
+p2 <- snp.comp$rotation[,2]
+p3 <- snp.comp$rotation[,3]
+
+#dataLabel <- as.factor(snp.comp$rotation[1,])
+#scatter3d(x=p1 , y=p2 , z=p3 , point.col = "blue", groups = dataLabel)
+scatter3d(x=p1 , y=p2 , z=p3 , point.col = "blue")
+
+
+
 
 
