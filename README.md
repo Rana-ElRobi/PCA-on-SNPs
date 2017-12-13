@@ -103,3 +103,4 @@ eg : `SNP1 == 1  &  SNP2 != 1  &  SNP3 == 1`
 	> x ? if retx is true the value of the rotated data (the centred (and scaled if requested) data multiplied by the rotation matrix) is returned. Hence, cov(x) is the diagonal matrix diag(sdev^2). For the formula method, napredict() is applied to handle the treatment of values omitted by the na.action. 
 
 - Plot 3 princibal componants, using [Scatter 3D plot](http://www.sthda.com/english/wiki/amazing-interactive-3d-scatter-plots-r-software-and-data-visualization)
+![Image of 3d plot result](https://github.com/Rana-ElRobi/PCA-on-SNPs/blob/pca/pca-plot.png)
